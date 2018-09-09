@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js not-ie"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+
+    <title>{{ page.title }} | Dave Taylor {{ site.job_title }}</title>
+    <meta name="description" content="{{ site.job_description }}"/>
+    <meta name="keywords" content="{{ site.keywords }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Lato:400,300,300italic,400italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/pure-grids.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-estuary-light.min.css">
+    <link rel="stylesheet" href="/bundle/index.css">
+
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:description" content="{{ site.job_description }}"/>
+    <meta property="og:type" content="author"/>
+    <meta property="og:url" content="https://davetayls.me{{ page.url }}"/>
+    <meta property="og:image"
+          content="{% if page.postimage %}{{ page.postimage }}{% else %}{{ site.postimage_default }}{% endif %}"/>
+    <meta property="fb:app_id" content="139170039487294"/>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org/",
+          "@type": "Blog",
+          "url": "https://davetayls.me{{ page.url }}",
+          "image": "{% if page.postimage %}{{ page.postimage }}{% else %}{{ site.postimage_default }}{% endif %}",
+          "name": "{{ site.site_name }}",
+          "author": {
+            "@context": "http://schema.org/",
+            "@type": "Person",
+            "givenName": "Dave",
+            "familyName": "Taylor",
+            "jobTitle": "{{ site.job_title }}"
+          }
+        }
+      ]
+    </script>
+
+
+    {% include favicon.html %}
+    <link rel="author" href="https://plus.google.com/103477668197991622209"/>
+
+  </head>
+  <body>
+    {% include components__PageHeader.html %}
+    {{ content }}
+    {% include components__PageFooter.html %}
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="/bundle/index.js"></script>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4421586-2']);
+      _gaq.push(['_setDomainName', 'davetayls.me']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function (){
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+    {% comment %}
+    <script type="text/javascript">
+      var disqus_shortname = 'davetayls';
+      (function (){
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://disqus.com/forums/davetayls/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+    {% endcomment %}
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+  </body>
+</html>

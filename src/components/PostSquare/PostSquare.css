@@ -1,0 +1,57 @@
+
+.PostSquare {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.PostSquare:after {
+  display: block;
+  content: '';
+  padding: 56% 0 0;
+  height: 0;
+}
+
+.PostSquare-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.PostSquare-title {
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  text-shadow: 1px 1px 1px #000;
+  background: #000;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.PostSquare-title span {
+  display: block;
+  padding: 5%;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+}
+
+.PostSquare-title time {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+

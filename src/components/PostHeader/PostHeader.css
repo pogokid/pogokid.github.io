@@ -1,0 +1,86 @@
+
+.PostHeader {
+  position: relative;
+  overflow: hidden;
+  border-bottom: solid 4px #000;
+  margin-bottom: 1rem;
+}
+
+.PostHeader-container {
+  position: relative;
+  height: 100%;
+}
+
+.PostHeader-title {
+  border-top: solid 3px #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  background: #000;
+  height: auto;
+  margin: 0;
+  padding: $BaseSpacing;
+  font-size: 2rem;
+  z-index: 2;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+
+.PostHeader-titleLink,
+.PostHeader-subtitle,
+.PostHeader-date {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.PostHeader-subtitle,
+.PostHeader-date {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+}
+
+.PostHeader-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.PostHeader-bg:before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+
+@media (--MediaFromMedium) {
+
+  .PostHeader {
+    height: 66vh;
+    max-height: 600px;
+  }
+
+  .PostHeader--isSmall {
+    height: 33vh;
+    max-height: 400px;
+  }
+
+  .PostHeader-title {
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 65%;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    font-size: 3rem;
+  }
+
+  .PostHeader-bg {
+    height: 100%;
+    background-attachment: fixed;
+  }
+
+  .PostHeader-bg:before {
+    display: none;
+  }
+
+}

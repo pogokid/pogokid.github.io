@@ -1,0 +1,29 @@
+lsi: false
+live: true
+url: https://pogokid.com
+permalink: /article/:year/:title
+postimage_default: /content/placeholder.jpg
+site_name: Pogo Kid
+years_experience: 15
+job_title: Software Engineering
+job_description: Frontend leadership, Frontend architecture, HTML(5), JavaScript (OOJS, ES6, TypeScript), CSS (BEM, Less, SASS, Stylus), Testable Code (Mocha, Sinon, Chai, Karma), NodeJs (Express, Mongoose) , Cloud Applications (Heroku, S3, Azure)
+keywords: Pogo Kid, Dave Taylor, David Taylor, Frontend leadership, Frontend architecture, HTML(5), JavaScript (OOJS, ES6, TypeScript), CSS (BEM, Less, SASS, Stylus), Testable Code (Mocha, Sinon, Chai, Karma), NodeJs (Express, Mongoose) , Cloud Applications (Heroku, S3, Azure)
+collections:
+  tags:
+    output: true
+    permalink: /:collection/:name
+defaults:
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: category
+      related_title: hide
+      comments: hide
+exclude:
+- startjekyll.bat
+- .idea
+- node_modules
+- package.json
+- typings
+- src

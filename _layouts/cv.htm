@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js not-ie">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }} - Dave Taylor (@davetayls) Front-End Web Developer</title>
+        <meta name="description" content="{{ page.description }}" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="apple-touch-startup-image" href="/apple-startup-image.png">
+
+        <link rel="stylesheet" href="../css/brand.css">
+        <style type="text/css">
+            body {
+                background: #ccc;
+            }
+            #wrapper {
+                background: #fff;
+                margin: 1.5625em 0.5em;
+                padding: 2.875em 0.5em;
+                -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                -o-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+            #intro p {
+                color: #000;
+                margin: 0;
+            }
+
+            a,
+            a:visited,
+            a:link
+            { color: #000; text-decoration: underline; }
+            h1 {
+                text-align: center;
+                padding-bottom: 24px;
+                font-size: 2.0em;
+                font-style: italic;
+            }
+                h1 em {
+                    display: block;
+                }
+            h2 {color: #444; font-style: italic; }
+            h3 { color: #000; font-weight: normal; margin: 0; }
+            h3 a { font-family: sans-serif; font-size: 0.666666666667em; }
+            h4 { color: #777; font-size: 0.875em; font-weight: normal; font-style: italic; }
+            p  { margin-left: 20px; widows: 3; }
+
+            dl { font-size: 11px; width: 290px; margin: 0 auto; position: relative; left: 17px; }
+                dl dt { width: 50px; }
+                dl dd { width: 180px; text-align: right; }
+
+            dt:nth-child(4n+1) {
+                clear: left;
+            }
+
+            ul { overflow: hidden; padding-left: 40px; }
+            ul li {
+                font-family: sans-serif;
+                font-size: 0.6875em;
+            }
+            @media all and (min-width:768px){
+                #wrapper {
+                    margin: 1.5625em auto;
+                    padding: 8.333333em;
+                    max-width: 740px;
+                    width: 90%;
+                }
+                h1 em {
+                    display: inline;
+                }
+                dl {
+                    width: 535px;
+                }
+            }
+            @media all and (min-width:990px){
+                #wrapper {
+                    padding: 8.333333em;
+                }
+            }
+
+            @media print {
+                body {
+                    font-size: 100%;
+                }
+                #wrapper {
+                    float: none;
+                    margin: 0;
+                    padding: 1cm 0;
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    -o-box-shadow: none;
+                    box-shadow: none;
+                }
+                dl { width: auto; left: 0; }
+                dl dt { width: 8%; padding-right: 2%; }
+                dl dd { width: 36%; padding-right: 4%; }
+            }
+
+        </style>
+
+        <meta property="og:title" content="{{ page.title }}" />
+        <meta property="og:type" content="author" />
+        <meta property="og:url" content="https://davetayls.me{{ page.url }}" />
+        <meta property="og:image" content="https://davetayls.me/images/logo.gif" />
+        <meta property="fb:app_id" content="139170039487294" />
+    </head>
+    <body>
+        <div id="wrapper">
+            {{ content }}
+        </div>
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-4421586-2']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+---
+title: TypeScript
+related: typescript
+---

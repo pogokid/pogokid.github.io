@@ -1,0 +1,21 @@
+<ul class="mod-imageGrid">
+{% for post in site.posts limit:14 offset:1 %}
+    <li>
+        <a href="{{ post.url }}">
+            <h2>
+                <span>
+                    {{ post.title }}
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date:"%b %d %Y" }}
+                    </time>
+                </span>
+            </h2>
+            {% if post.postimage %}
+            <img src="{{ post.postimage }}" alt="{{ post.title }}">
+            {% else %}
+            <img src="{{site.postimage_default}}" alt="{{post.title}}" />
+            {% endif %}
+        </a>
+    </li>
+{% endfor %}
+</ul>

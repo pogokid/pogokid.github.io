@@ -1,0 +1,37 @@
+
+.BrowsePosts {
+  display: block;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.BrowsePosts-nav,
+.BrowsePosts-item {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+}
+
+.BrowsePosts-item {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+@media (min-width: $ResponsiveTabletFrom) {
+
+  .BrowsePosts-item {
+    float: left;
+    width: 33%;
+    padding: 0 $BaseSpacing $BaseSpacing 0;
+  }
+
+}
+
+@media (min-width: $ResponsiveDesktopFrom) and (max-width: $ResponsiveWideFrom) {
+
+  .pure-u-lg-1-2 .BrowsePosts-item {
+    float: none;
+    width: auto;
+  }
+
+}

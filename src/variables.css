@@ -1,0 +1,28 @@
+body {
+  background: #00c7c7;
+  background: white;
+}
+
+$ColorCore: #00c7c7;
+$ColorSecondary: #666;
+$ColorBody: #444;
+
+$FontFamilySans: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$FontFamilySerif: Georgia, "Bookman", "Times New Roman", serif;
+$FontFamilyDisplay: "Playfair Display", Georgia, "Bookman", "Times New Roman", serif;
+$BaseFontSize: 1rem;
+$FontSizePoster: 3rem;
+$BaseSpacing: 16px;
+$PageHeaderHeight: 76px;
+
+$ResponsiveSmallTo: 599px;
+$ResponsiveTabletFrom: 600px;
+$ResponsiveDesktopFrom: 64rem;
+$ResponsiveWideFrom: 75rem;
+
+$ContainerDesktopWidth: 990px;
+$ContainerWideWidth: 1200px;
+
+@custom-media --MediaUpToMedium (max-width: 599px);
+@custom-media --MediaFromMedium (min-width: 600px);
+@custom-media --MediaFromLarge (min-width: 64rem);

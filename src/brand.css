@@ -1,0 +1,25 @@
+
+html, body {
+  font-size: 16px;
+}
+
+html, body,
+.pure-g [class *= "pure-u"] {
+  font-family: $FontFamilySans;
+}
+
+body {
+  padding-top: $PageHeaderHeight;
+}
+
+a {
+  color: $ColorCore;
+}
+
+code {
+  display: inline-block;
+  background-color: #efefef;
+  padding: 0 4px;
+  border-radius: 5px;
+}
+

@@ -1,0 +1,15 @@
+{% if page.related %}
+  <section class="RelatedPosts">
+    {% if page.related_title != 'hide' %}
+    {% for tag in site.tags %}
+    {% if tag.related == page.related %}
+    <h2 class="RelatedPosts-header">
+      Other <strong>{{ tag.title }}</strong> articles
+    </h2>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% assign BrowsePostsList = site.categories[page.related] %}
+    {% include components__BrowsePosts.html %}
+  </section>
+{% endif %}

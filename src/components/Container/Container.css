@@ -1,0 +1,19 @@
+
+.Container {
+  position: relative;
+  margin: 0 1rem;
+}
+
+@media all and (min-width: 990px) {
+  .Container {
+    max-width: $ContainerDesktopWidth;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width: 1210px) {
+  .Container {
+    max-width: $ContainerWideWidth;
+  }
+}
