@@ -5,7 +5,6 @@ const tocbot = require('tocbot')
 
 require('waypoints/lib/noframework.waypoints')
 require('waypoints/lib/shortcuts/sticky')
-require('./index.css')
 
 fastclick.attach(document.body);
 (<any>window).jQuery = $

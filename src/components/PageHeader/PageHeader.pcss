@@ -1,0 +1,161 @@
+@value ResponsiveTabletFrom from '../../variables.pcss';
+@value PageHeaderHeight from '../../variables.pcss';
+
+.PageHeader {
+  background: hsla(0, 0%, 20%, 0.98);
+  margin: 0;
+  padding: 0 0 0 100px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: PageHeaderHeight;
+}
+
+.PageHeader-logo {
+  position: absolute;
+  z-index: 3;
+  top: 16px;
+  left: 16px;
+  width: 74px;
+  height: 74px;
+  transition: all .3s ease;
+}
+
+.PageHeader-toggle {
+  position: absolute;
+  z-index: 4;
+  top: 1rem;
+  right: 1rem;
+}
+
+.PageHeader-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.PageHeader-nav {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 1rem 1rem 1rem 0;
+  margin: 0;
+}
+
+.PageHeader-pageTitle {
+  z-index: 0;
+  color: #ccc;
+  opacity: 0;
+  font-size: .7rem;
+  line-height: 1;
+  position: absolute;
+  padding: .5rem 1rem .5rem 60px;
+  bottom: 0;
+  left: 1rem;
+  right: 0;
+  transition: opacity .3s ease;
+  overflow: hidden;
+  height: .7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.PageHeader-firstList,
+.PageHeader-secondList {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.PageHeader-firstList {
+  display: none;
+  float: left;
+  transition: opacity .3s ease;
+}
+
+.PageHeader-secondList {
+  float: right;
+  margin-right: 2.4rem;
+}
+
+.PageHeader-navItem {
+  list-style: none outside;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media ResponsiveTabletFrom {
+
+  .PageHeader-toggle {
+    display: none;
+  }
+
+  .PageHeader-firstList {
+    display: block;
+  }
+
+  .PageHeader-secondList {
+    margin-right: 0;
+  }
+
+  .PageHeader-pageTitle {
+    font-size: 1rem;
+    padding: .5rem 1rem .5rem 100px;
+    bottom: auto;
+    top: 1rem;
+    left: 1rem;
+    line-height: 2rem;
+    height: 1rem;
+    text-align: left;
+  }
+
+  .PageHeader-navItem {
+    text-align: left;
+  }
+
+}
+
+.PageHeader--collapsed .PageHeader-firstList {
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.PageHeader--collapsed .PageHeader-pageTitle {
+  opacity: 1;
+}
+
+.PageHeader--open .PageHeader-logo,
+.PageHeader--collapsed .PageHeader-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.PageHeader--open {
+  height: 100%;
+  padding-left: 1rem;
+  padding-top: 4rem;
+}
+
+.PageHeader--open .PageHeader-firstList,
+.PageHeader--open .PageHeader-secondList {
+  opacity: 1;
+  pointer-events: all;
+  display: block;
+  float: none;
+}
+
+.PageHeader--open .PageHeader-secondList {
+  margin-right: 0;
+}
+
+.PageHeader--open .PageHeader-navItem {
+  display: block;
+  margin: .5rem 0;
+}
+

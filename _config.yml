@@ -27,3 +27,9 @@ exclude:
 - package.json
 - typings
 - src
+- package-lock.json
+- postcss.config.js
+- tsconfig.json
+- tslint.json
+- webpack.config.js
+

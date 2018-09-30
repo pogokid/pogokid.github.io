@@ -1,34 +1,48 @@
-var autoprefixer = require('autoprefixer');
-var postcssImport = require('postcss-import');
-var postcssBEM = require('postcss-bem');
-var postcssVars = require('postcss-simple-vars');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+var path = require('path')
 
 module.exports = {
-  entry: './src',
+  entry: {
+    index: './src/index.js',
+    styles: [
+      'normalize.css',
+      './src/brand.pcss',
+      './src/components/index.js',
+      './src/lib/index.js'
+    ]
+  },
   output: {
-    path: './bundle',
-    filename: 'index.js'
+    path: path.resolve('./bundle'),
+    filename: '[name].js'
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
+        test: /\.p?css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          // 'style-loader',
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'postcss-loader',
+        ]
+        // loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader')
       }
     ]
   },
-  postcss: function(webpack) {
-    return [
-      postcssImport({ addDependencyTo: webpack }),
-      postcssBEM(),
-      postcssVars(),
-      require('postcss-custom-properties')(),
-      require('postcss-custom-media')(),
-      autoprefixer
-    ];
-  },
   plugins: [
-    new ExtractTextPlugin('./index.css')
-  ]
+    new MiniCssExtractPlugin({ filename: "[name].css" })
+  ],
+  devServer: {
+    publicPath: '/bundle/',
+    contentBase: path.join(__dirname, '_site'),
+    overlay: {
+      errors: true,
+      warnings: true
+    },
+    stats: 'minimal',
+    compress: true,
+    hot: true,
+    host: '0.0.0.0',
+    port: 4011
+  }
 };
