@@ -8,7 +8,7 @@
     "start": "tsc && webpack",
     "build": "webpack --production",
     "webpack": "webpack-dev-server -d",
-    "jekyll": "jekyll serve --drafts --port 4001 --incremental",
+    "jekyll": "jekyll serve --drafts --port 4001 --incremental --trace",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
