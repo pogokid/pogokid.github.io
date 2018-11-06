@@ -33,7 +33,6 @@ const PAGE_HEADER_OPEN = 'PageHeader--open'
 const BURGER_X = 'Burger--x'
 
 $pageHeaderBurger.on('click', function () {
-  console.log('clicked')
   $pageHeader.toggleClass(PAGE_HEADER_OPEN)
   $pageHeaderBurger.toggleClass(BURGER_X)
 })

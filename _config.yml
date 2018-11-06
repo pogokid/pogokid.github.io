@@ -1,6 +1,7 @@
 lsi: false
 live: true
 url: https://pogokid.com
+domain_name: pogokid.com
 permalink: /article/:year/:title
 postimage_default: /content/placeholder.jpg
 site_name: Pogo Kid

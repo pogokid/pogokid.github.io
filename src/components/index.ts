@@ -16,6 +16,7 @@ require("./PostHeader/PostHeader.pcss");
 require("./PostSquare/PostSquare.css");
 require("./ProductColumns/ProductColumns.pcss");
 require("./ProductList/ProductList.pcss");
+require("./ProductSection/ProductSection.pcss");
 require("./RecommendationQuote/RecommendationQuote.pcss");
 require("./RelatedPosts/RelatedPosts.pcss");
 require("./TOC/TOC.css");

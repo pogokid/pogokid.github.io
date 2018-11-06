@@ -1,0 +1,43 @@
+<section class="ProductSection">
+  {% for product in site.data.products %}
+  <section class="ProductSection-product" style="background-image: url('/content/products/{{ product.id }}.jpg')">
+    <div class="ProductSection-container Container">
+      <div class="ProductSection-icon">
+        <i class="fas fa-{{ product.icon }}"></i>
+      </div>
+      <h2 class="ProductSection-name">
+        {{ product.name }}
+      </h2>
+      <p class="ProductSection-pitch">{{ product.pitch }}</p>
+      <div class="Container">
+        <div class="">
+          <div class="">
+            <div class="ProductSection-info">
+              <ul class="ProductSection-rewards">
+                {% for reward in product.rewards %}
+                <li>{{ reward }}</li>
+                {% endfor %}
+              </ul>
+              {% if product.quote %}
+              {% assign RecommendationQuote = site.data.recommendation_quotes[product.quote] %}
+              {% include components__RecommendationQuote.html %}
+              {% endif %}
+            </div>
+          </div>
+          <div class="ProductSection-about">
+            {{ product.about | markdownify }}
+          </div>
+        </div>
+        {% if product.cost %}
+        <div class="ProductSection-cost">
+          {{ product.cost }}
+        </div>
+        {% endif %}
+        <p class="ProductSection-contact">
+          <a class="Button Button@sm--isSmall" target="_blank" href="{{ product.more }}">Find out more</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+</section>

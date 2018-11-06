@@ -1,0 +1,66 @@
+@value ResponsiveTabletFrom from '../../variables.pcss';
+@value BaseSpacing from '../../variables.pcss';
+@value FontSizePoster from '../../variables.pcss';
+
+.ProductSection {}
+
+.ProductSection-product {
+  border-top: solid 1px black;
+  background-image: url(/images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+  padding: 9rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ProductSection-container {
+}
+
+.ProductSection-icon {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px black;
+}
+
+.ProductSection-name {
+  font-size: FontSizePoster;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px black;
+}
+
+.ProductSection-cost,
+.ProductSection-rewards,
+.ProductSection-about,
+.ProductSection-pitch {
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px black;
+}
+
+.ProductSection-rewards {
+
+}
+
+.ProductSection-rewards li {
+  display: inline-block;
+}
+
+.ProductSection-rewards li + li:before {
+  content: ' - ';
+}
+
+.ProductSection-contact {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+@media ResponsiveTabletFrom {
+
+
+}

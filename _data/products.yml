@@ -1,22 +1,22 @@
 
-- name: Software Engineering and Technical Architecture
-  pitch: Analysis with a report on suggested architecture choices to improve code stability and team productivity
-  quote: 3
+- id: architecture-analysis
+  name: React Application Analysis
+  pitch: Analysis of React application architecture
+  icon: cogs
+  cost: "Codebase: Small £4,800; Med £8,000; Large £800/day"
+  period: 2 Weeks
+  more: https://www.surveymonkey.co.uk/r/KNN2ZXH
   about: >
-    I have designed the architecture for large websites, HTML5 apps and software as a service platforms.
+    There are many ways in which React Applications can be implemented.
 
-    These have included:
+    This analysis report will cover various aspect of how a codebase has
+    been structured and coded and will highlight ways it can be improved.
 
-     - cloud infrastructure using AWS including serverless APIs
-     - enterprise CMS builds for Lloyd's of London, British Red Cross and Arrow Electronics
-     - campaign sites for The FA and RFU;
-
-    I take a modular approach, I work closely with the development team and other areas of the business to achieve scaleable results.
-
-    I am keen to marry good inter-personal and communication skills with solid technical thought leadership enabling teams to grow in confidence and produce great work.
+    It also provides insight into tools and testing to give your team the
+    insights needed to make each deployment more reliable.
 
   rewards:
-    - I base my decisions on tried-and-tested solutions
-    - I analyse and make the most of current trends
-    - I am experienced at communicating and leading teams
+    - Improve code stability
+    - How to increase test coverage
+    - Tooling
 
