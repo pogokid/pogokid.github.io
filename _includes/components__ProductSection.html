@@ -1,6 +1,6 @@
 <section class="ProductSection">
   {% for product in site.data.products %}
-  <section class="ProductSection-product" style="background-image: url('/content/products/{{ product.id }}.jpg')">
+  <section class="ProductSection-product">
     <div class="ProductSection-container Container">
       <div class="ProductSection-icon">
         <i class="fas fa-{{ product.icon }}"></i>
@@ -41,3 +41,4 @@
   </section>
   {% endfor %}
 </section>
+

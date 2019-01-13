@@ -1,14 +1,40 @@
 
-- id: architecture-analysis
-  name: React Application Analysis
-  pitch: Analysis of React application architecture
+- id: react-kickoff
+  name: React Application Kickoff
+  pitch: >-
+    Let us start your application with some good choices
   icon: cogs
-  cost: "Codebase: Small £4,800; Med £8,000; Large £800/day"
+  cost: "Codebase: Small £4,800; Med £8,000; Large £Quote"
   period: 2 Weeks
   more: https://www.surveymonkey.co.uk/r/KNN2ZXH
-  about: >
-    There are many ways in which React Applications can be implemented.
+  about: |
+    It's hard to build website applications. There is a steep learning
+    curve, many conflicting ideas and complex questions to be answered.
 
+    We have the experience to bring some light into this murky world
+    of choices. This report will cover various aspects of setting up a
+    codebase, how it should be structured along with documented standards and
+    documented coding style guides.
+
+    It also provides insight into tools and testing to give your team the
+    insights needed to make each deployment more reliable.
+
+  rewards:
+  - Project structure
+  - Improve code stability
+  - How to increase test coverage
+  - Tooling
+
+- id: react-analysis
+  name: React Application Analysis
+  pitch: >-
+    You've already got a React application and want some insight on how
+    it could be improved
+  icon: cogs
+  cost: "Codebase: Small £4,800; Med £8,000; Large £Quote"
+  period: 2 Weeks
+  more: https://www.surveymonkey.co.uk/r/KNN2ZXH
+  about: |
     This analysis report will cover various aspect of how a codebase has
     been structured and coded and will highlight ways it can be improved.
 
@@ -16,6 +42,7 @@
     insights needed to make each deployment more reliable.
 
   rewards:
+    - Project structure
     - Improve code stability
     - How to increase test coverage
     - Tooling

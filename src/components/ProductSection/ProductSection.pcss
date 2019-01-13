@@ -5,8 +5,7 @@
 .ProductSection {}
 
 .ProductSection-product {
-  border-top: solid 1px black;
-  background-image: url(/images/hero-bg.jpg);
+  border-top: solid 1px rgba(0, 0, 0, .2);
   background-size: cover;
   background-position: center center;
   margin: 0;
@@ -20,16 +19,12 @@
 
 .ProductSection-icon {
   font-size: 100px;
-  color: white;
   text-align: center;
-  text-shadow: 0 1px black;
 }
 
 .ProductSection-name {
   font-size: FontSizePoster;
-  color: white;
   text-align: center;
-  text-shadow: 0 1px black;
 }
 
 .ProductSection-cost,
@@ -38,21 +33,16 @@
 .ProductSection-pitch {
   font-size: 22px;
   font-weight: 300;
-  color: white;
   text-align: center;
-  text-shadow: 0 1px black;
+}
+
+.ProductSection-info {
+  display: flex;
+  justify-content: center;
 }
 
 .ProductSection-rewards {
-
-}
-
-.ProductSection-rewards li {
-  display: inline-block;
-}
-
-.ProductSection-rewards li + li:before {
-  content: ' - ';
+  text-align: left;
 }
 
 .ProductSection-contact {
