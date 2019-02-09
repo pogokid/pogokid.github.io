@@ -5,7 +5,7 @@ domain_name: pogokid.com
 permalink: /article/:year/:title.html
 postimage_default: /content/placeholder.jpg
 site_name: Pogo Kid
-years_experience: 15
+years_experience: 17
 job_title: Software Engineering
 job_description: Frontend leadership, Frontend architecture, HTML(5), JavaScript (OOJS, ES6, TypeScript), CSS (BEM, Less, SASS, Stylus), Testable Code (Mocha, Sinon, Chai, Karma), NodeJs (Express, Mongoose) , Cloud Applications (Heroku, S3, Azure)
 keywords: Pogo Kid, Dave Taylor, David Taylor, Frontend leadership, Frontend architecture, HTML(5), JavaScript (OOJS, ES6, TypeScript), CSS (BEM, Less, SASS, Stylus), Testable Code (Mocha, Sinon, Chai, Karma), NodeJs (Express, Mongoose) , Cloud Applications (Heroku, S3, Azure)

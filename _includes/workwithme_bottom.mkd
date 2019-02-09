@@ -69,7 +69,7 @@ When I have a project worthy of his talent, he's first on my list!”
 
 ### [Guillaume Buat-Ménard](http://www.linkedin.com/in/buatmenard), Technical Director, [TMW London](http://www.tmw.co.uk)
 
-“David is an outstanding developer combining great coding skills, broad knowledge, agency mindset for delivery and wisdom. Dave is passionate about his craft and constantly improving frameworks, standards and is very active in the open source community, he is one of the very best developers I have worked with over the last 15 years.”
+“David is an outstanding developer combining great coding skills, broad knowledge, agency mindset for delivery and wisdom. Dave is passionate about his craft and constantly improving frameworks, standards and is very active in the open source community, he is one of the very best developers I have worked with over the last {{ site.years_experience }} years.”
 
 
 ### [John Bown](http://www.linkedin.com/in/johnbown), Digital Operations Director, Aqueduct
@@ -129,11 +129,4 @@ I had the pleasure of meeting Dave when he was assigned to one of my large scale
 
 
 
-## Connect with me
-
-I am davetayls in most social places. Here are a few.
-
-[LinkedIn](http://www.linkedin.com/in/davetayls),
-[Twitter](http://twitter.com/davetayls),
-[Github](http://github.com/davetayls),
 

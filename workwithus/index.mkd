@@ -1,13 +1,19 @@
 ---
 layout: workwithme
-title: Work with Dave Taylor
-postimage: /content/2013-08-flightoftheaudiovisualator.png
+title: Work with Pogo Kid
+postimage: /content/2017/10-react-talk.jpg
 comments: hide
 share: hide
 ---
 
-Over the last 15 years I've given frontend leadership and development to global brands like Jaguar, Land Rover, Lloyd's
+Over the last {{ site.years_experience }} years I've given frontend leadership and development to global brands like Jaguar, Land Rover, Lloyd's
 of London and Arrow Electronics. I  love giving companies the opportunity to pack a punch and deliver the best
 experience to their users.
 
-## Ways I can help:
+## Connect with me
+
+I am davetayls in most social places. Here are a few.
+
+[LinkedIn](http://www.linkedin.com/in/davetayls),
+[Twitter](http://twitter.com/davetayls),
+[Github](http://github.com/davetayls),
