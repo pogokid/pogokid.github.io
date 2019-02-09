@@ -1,3 +1,6 @@
+/**
+ * Pogo Kid
+ */
 const fastclick = require('fastclick')
 const debounce = require('lodash.debounce')
 import $ = require('jquery');

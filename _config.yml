@@ -2,7 +2,7 @@ lsi: false
 live: true
 url: https://pogokid.com
 domain_name: pogokid.com
-permalink: /article/:year/:title
+permalink: /article/:year/:title.html
 postimage_default: /content/placeholder.jpg
 site_name: Pogo Kid
 years_experience: 15
