@@ -2,7 +2,7 @@
 @value PageHeaderHeight from '../../variables.pcss';
 
 .PageHeader {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.95);
   margin: 0;
   padding: 0 0 0 100px;
   position: fixed;
@@ -118,6 +118,11 @@
     text-align: left;
   }
 
+}
+
+.PageHeader--collapsed {
+  min-height: 86px;
+  border-bottom: solid 2px white;
 }
 
 .PageHeader--collapsed .PageHeader-firstList {

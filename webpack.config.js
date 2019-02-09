@@ -33,7 +33,7 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
         options: {
-          useCache: true
+          useCache: false
         }
       },
       {
@@ -61,8 +61,8 @@ module.exports = {
       warnings: true
     },
     stats: 'minimal',
-    compress: true,
-    hot: true,
+    compress: false,
+    hot: false,
     host: '0.0.0.0',
     port: 4011
   }
