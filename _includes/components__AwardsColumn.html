@@ -1,8 +1,5 @@
-
 <section class="AwardsColumn">
-  <h2 class="AwardsColumn-title">Awards</h2>
-
-  {% for award in site.data.awards limit:2 %}
+  {% for award in site.data.awards %}
   <section class="AwardsColumn-award">
     <div class="AwardsColumn-imageWrapper">
       <img class="AwardsColumn-image" src="{{ award.image }}" alt="{{ award.name }}">
@@ -11,5 +8,4 @@
     <h4 class="AwardsColumn-project">{{ award.project }}</h4>
   </section>
   {% endfor %}
-
 </section>

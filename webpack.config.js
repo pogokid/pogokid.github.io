@@ -17,8 +17,8 @@ module.exports = {
     styles: [
       'normalize.css',
       './src/brand.pcss',
-      './src/components/index.js',
-      './src/lib/index.js'
+      './src/components/index',
+      './src/lib/index'
     ]
   },
 

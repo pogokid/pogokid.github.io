@@ -9,6 +9,7 @@ Thumbs.db
 /.settings
 /src-build
 node_modules
+.awcache
 .idea
 .jekyll-metadata
 

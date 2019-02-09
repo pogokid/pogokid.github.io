@@ -1,7 +1,7 @@
 
 require("./AboutMeAside/AboutMeAside.pcss");
 require("./ArticleContent/ArticleContent.pcss");
-require("./AwardsColumn/AwardsColumn.css");
+require("./AwardsColumn/AwardsColumn.pcss");
 require("./BrowsePosts/BrowsePosts.pcss");
 require("./Burger/Burger.pcss");
 require("./Button/Button.pcss");
