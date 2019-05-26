@@ -15,11 +15,30 @@
     I have been working with JavaScript applications for over a decade and with
     React, Redux for the last few years.
 
+- id: typescript-transition
+  name: Move to TypeScript
+  pitch: >-
+    I can help you convert an existing JavaScript application to
+    TypeScript
+  icon: bolt
+  more: 'mailto:dave.taylor@pogokid.com'
+  about: |
+    Big or Small, I can plan the transition and undertake as much of
+    the changes as you need.
+
+    I can also provide training and support to get your team on-board
+    with the change.
+
+  rewards:
+    - Static type checking
+    - Better code integration across private npm modules
+    - Rich domain of types which describe the underlying data
+
 - id: react-kickoff
   name: React Application Kickoff
   pitch: >-
     Let me start your application with some good choices
-  icon: cogs
+  icon: cubes
   more: https://www.surveymonkey.co.uk/r/KNN2ZXH
   about: |
     It's hard to build website applications. There is a steep learning
@@ -44,7 +63,7 @@
   pitch: >-
     You've already got a React application and want some insight on how
     it could be improved
-  icon: cogs
+  icon: laptop-medical
   more: https://www.surveymonkey.co.uk/r/KNN2ZXH
   about: |
     This analysis report will cover various aspect of how a codebase has
