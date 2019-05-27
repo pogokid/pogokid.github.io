@@ -5,7 +5,7 @@
   icon: cogs
   more: 'mailto:dave.taylor@pogokid.com'
   about: |
-    I am based in Bath, England. I can either work from your office within
+    I am based in Bath, England. I either work from your office within
     the surrounding areas (eg. Bath, Bristol, Cardiff, Chippenham) or remotely
     from my home office and have regular visits.
 
@@ -18,15 +18,14 @@
 - id: typescript-transition
   name: Move to TypeScript
   pitch: >-
-    I can help you convert an existing JavaScript application to
-    TypeScript
+    Convert an existing JavaScript codebase to TypeScript
   icon: bolt
   more: 'mailto:dave.taylor@pogokid.com'
   about: |
-    Big or Small, I can plan the transition and undertake as much of
+    Big or small, I plan the transition and undertake as much of
     the changes as you need.
 
-    I can also provide training and support to get your team on-board
+    I also provide training and support to get your team on-board
     with the change.
 
   rewards:
@@ -44,7 +43,7 @@
     It's hard to build website applications. There is a steep learning
     curve, many conflicting ideas and complex questions to be answered.
 
-    We have the experience to bring some light into this murky world
+    I have the experience to bring some light into this murky world
     of choices. This report will cover various aspects of setting up a
     codebase, how it should be structured along with documented standards and
     documented coding style guides.
