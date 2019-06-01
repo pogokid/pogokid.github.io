@@ -10,7 +10,7 @@
     "build": "webpack --production",
     "deploy": "npm run build && git commit -am 'build' && git push",
     "webpack": "webpack-dev-server -d",
-    "jekyll": "jekyll serve --drafts --port 4001 --incremental --trace",
+    "jekyll": "jekyll serve --drafts --port 4001 --trace",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

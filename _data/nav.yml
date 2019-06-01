@@ -1,0 +1,8 @@
+
+primary:
+  - text: Home
+    href: /
+  - text: Projects
+    href: /tags/project.html
+  - text: Dave's personal blog
+    href: https://davetayls.me

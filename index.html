@@ -19,9 +19,13 @@ layout: master
       <h2>Awards and Industry Recognition</h2>
       {% include components__AwardsColumn.html %}
 
+      <h2>Projects</h2>
+      {% assign BrowsePostsList = site.categories['project'] %}
+      {% include components__BrowsePosts.html limit=9 %}
+
       <h2>Recent Articles</h2>
       {% assign BrowsePostsList = site.posts %}
-      {% include components__BrowsePosts.html limit=30 %}
+      {% include components__BrowsePosts.html limit=24 %}
       
     </div>
   </div>

@@ -13,9 +13,13 @@
                     <a accesskey="c" href="#content">Jump to main content [Access key 'C']</a>
                 </li>
                 -->
+                {% for navItem in site.data.nav.primary %}
                 <li class="PageHeader-navItem">
-                    <a class="Button Button--isLink Button--isOnLight" accesskey="0" href="/">Home</a>
+                    <a class="Button Button--isLink Button--isOnLight" accesskey="0" href="{{ navItem.href }}">
+                        {{ navItem.text }}
+                    </a>
                 </li>
+                {% endfor %}
             </ul>
             <ul class="PageHeader-secondList">
                 <li class="PageHeader-navItem">
