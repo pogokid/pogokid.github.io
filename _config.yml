@@ -3,7 +3,7 @@ live: true
 url: https://pogokid.com
 domain_name: pogokid.com
 permalink: /article/:year/:title.html
-postimage_default: /content/placeholder.jpg
+postimage_default: /images/hero-bg.jpg
 site_name: Pogo Kid
 years_experience: 17
 job_title: Software Engineering

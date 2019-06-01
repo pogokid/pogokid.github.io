@@ -8,3 +8,8 @@
   url: http://www.sitecore.net/customers/experience-awards/2011-finalists-uk.aspx
   project: The Football Association
   image: /content/awards/sitecore.png
+
+- name: Reviewer for Packt publishing
+  url: https://www.packtpub.com/gb/web-development/learn-react-typescript-3
+  project: Learn React with TypeScript 3
+  image: /content/awards/learn-react-with-typescript-3.jpg
