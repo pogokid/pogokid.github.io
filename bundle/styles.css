@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -22,6 +22,14 @@ html {
 
 body {
   margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
 }
 
 /**
@@ -371,6 +379,7 @@ code {
   display: none;
   margin: 2rem 3rem;
   max-width: 21rem;
+  -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 .AboutMeAside-avatar {
@@ -467,10 +476,10 @@ code {
   line-height: 1;
 }
 .ArticleContent blockquote:before {
-  content: '\2619';
+  content: '☙';
 }
 .ArticleContent blockquote:after {
-  content: '\2766';
+  content: '❦';
 }
 .ArticleContent blockquote,
 .ArticleContent blockquote p {
@@ -533,17 +542,24 @@ code {
 
 .AwardsColumn {
   margin: 2rem 0;
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .AwardsColumn-award {
+  background-color: #eee;
   border: solid 1px #eee;
-  width: 48%;
+  margin: 0 1px;
 }
 
 .AwardsColumn-imageWrapper {
+  background-color: white;
   display: block;
   padding: 1rem;
 }
@@ -570,7 +586,6 @@ code {
   font-size: 1rem;
   font-weight: normal;
   color: #777;
-  background-color: #eee;
   margin: 0;
   padding: .5rem .5rem 1rem;
 }
@@ -626,6 +641,7 @@ code {
   width: 22px;
   right: 0;
   border: solid 2px #94c700;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -674,9 +690,12 @@ code {
   cursor: pointer;
   touch-action: none;
   position: relative;
+  display: -webkit-inline-box;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   height: 44px;
   box-sizing: border-box;
   padding: 0 1rem;
@@ -963,6 +982,7 @@ small.GetInTouchFooter-chat {
   left: 16px;
   width: 64px;
   height: 64px;
+  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 .PageHeader-toggle {
@@ -994,6 +1014,7 @@ small.GetInTouchFooter-chat {
   bottom: 0;
   left: 1rem;
   right: 0;
+  -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
   overflow: hidden;
   height: .7rem;
@@ -1010,6 +1031,7 @@ small.GetInTouchFooter-chat {
 .PageHeader-firstList {
   display: none;
   float: left;
+  -webkit-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 .PageHeader-secondList {
@@ -1263,7 +1285,7 @@ small.GetInTouchFooter-chat {
 }
 
 .ProductColumns-rewards li:before {
-  content: '\2619';
+  content: '☙';
   display: block;
   font-family: sans-serif;
 }
@@ -1322,7 +1344,7 @@ small.GetInTouchFooter-chat {
   margin: .5rem 0;
 }
 .ProductList-rewards li:before {
-  content: '\2619';
+  content: '☙';
   display: block;
   font-family: sans-serif;
 }
@@ -1368,8 +1390,10 @@ small.GetInTouchFooter-chat {
   text-align: center;
 }
 .ProductSection-info {
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 .ProductSection-rewards {
   text-align: left;
@@ -1415,11 +1439,11 @@ small.GetInTouchFooter-chat {
 }
 
 .RecommendationQuote:before {
-  content: '\2619';
+  content: '☙';
 }
 
 .RecommendationQuote:after {
-  content: '\2766';
+  content: '❦';
 }
 
 .RecommendationQuote,
