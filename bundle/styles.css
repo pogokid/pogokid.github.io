@@ -1192,6 +1192,26 @@ small.GetInTouchFooter-chat {
   }
 
 }
+@media (min-width: 64rem) {
+
+  @media (orientation: portrait) {
+
+    .PostHeader-bg {
+      background-size: contain;
+      background-position: top;
+    }
+
+  }
+
+}
+@media (min-width: 75rem) and (orientation: landscape) {
+
+  .PostHeader {
+    height: 76vh;
+    max-height: none;
+  }
+
+}
 
 
 .PostSquare {
