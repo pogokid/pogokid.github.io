@@ -1,4 +1,4 @@
-@value ResponsiveTabletFrom from '../../variables.pcss';
+@value ResponsiveTabletFrom, ResponsiveWideFrom, ResponsiveDesktopFrom, ResponsivePortrait, ResponsiveFromWideLandscape from '../../variables.pcss';
 @value BaseSpacing from '../../variables.pcss';
 
 .PostHeader {
@@ -83,6 +83,28 @@
 
   .PostHeader-bg:before {
     display: none;
+  }
+
+}
+
+@media ResponsiveDesktopFrom {
+
+  @media ResponsivePortrait {
+
+    .PostHeader-bg {
+      background-size: contain;
+      background-position: top;
+    }
+
+  }
+
+}
+
+@media ResponsiveFromWideLandscape {
+
+  .PostHeader {
+    height: 76vh;
+    max-height: none;
   }
 
 }
